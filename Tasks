@@ -8,5 +8,8 @@ def TaskFill(T, l, u):
         T[i] = random.randint(l,u)
 TaskFill(Tasks, 0, 10)
 
-def Task(n, i):
-    print("Task %s has %s seconds remaining" %(n, i))
+def Task(n, i, l):
+    while l >0:
+        print("Task %s has %s runs remaining" %(n, i))
+        Tasks[n-1] -= 1
+        l -= 1
