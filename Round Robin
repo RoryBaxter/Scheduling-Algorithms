@@ -1,3 +1,10 @@
 #Scheduling-Algorithms
 #Round Robin
 #Code for the Round Robin method of scheduling
+
+
+#Requires code from Tasks to run
+
+while Tasks != [0,0,0,0,0]:
+    for i in range(0, len(Tasks)+1):
+        Task(i, Tasks[i-1], 1)
