@@ -1,0 +1,12 @@
+#Scheduling-Algorithms
+#Tasks
+#The code that creates all of the tasks
+import random
+Tasks = [0,0,0,0,0]
+def TaskFill(T, l, u):
+    for i in range(0,len(T)):
+        T[i] = random.randint(l,u)
+TaskFill(Tasks, 0, 10)
+
+def Task(n, i):
+    print("Task %s has %s seconds remaining" %(n, i))
