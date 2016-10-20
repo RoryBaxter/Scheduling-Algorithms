@@ -10,6 +10,10 @@ TaskFill(Tasks, 0, 10)
 
 def Task(n, i, l):
     while l >0:
-        print("Task %s has %s runs remaining" %(n, i))
-        Tasks[n-1] -= 1
+        if i != 0:
+            print("Task %s has %s runs remaining" %(n, i))
+            Tasks[n-1] -= 1
         l -= 1
+
+print(Tasks)
+
