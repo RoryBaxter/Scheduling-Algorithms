@@ -1,0 +1,8 @@
+#Scheduling Algorithms
+#First-Come-First-Served
+#Code for the first come first served 
+
+#Requires the Tasks code
+
+for i in range(1, len(Tasks)+1):
+    Task(i, Task[i], Task[i])
